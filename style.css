@@ -1,0 +1,179 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #121212;
+    color: #fff;
+    height: 35px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.logo img {
+    height: 20px;
+}
+
+.logo p {
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.search-section {
+    display: flex;
+    flex: 1;
+    max-width: 600px;
+}
+
+.search-bar {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 40px 0 0 40px;
+    outline: none;
+    margin-left: 20px;
+    background-color: #121212;
+    border: 1px gray solid;
+    border-right: none;
+}
+
+.search-button {
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 20px;
+    background-color: #404040;
+    color: white;
+    border: none;
+    border-radius: 0 40px 40px 0;
+    cursor: pointer;
+}
+
+.icons-section {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    overflow-y: auto;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.sidebar-item:hover,
+.sidebar-item.active {
+    background-color: #404040;
+}
+
+.sidebar-item i {
+    margin-right: 10px;
+}
+
+.main-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    overflow: scroll hidden;
+
+    padding: 15px;
+}
+
+.main-window {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+}
+
+.video-card {
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.video-card:hover {
+    background-color: #000000;
+}
+
+.video-card img {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.video-profile {
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    background-color: pink;
+}
+
+.video-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.video-card section h1 {
+    font-size: 15px;
+}
+
+.video-card section p {
+    font-size: 10px;
+    top: -5px;
+    position: relative;
+}
+
+.gradient {
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    border-radius: 100%;
+    padding: 1.5px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
